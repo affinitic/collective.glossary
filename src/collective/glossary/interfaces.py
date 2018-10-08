@@ -32,6 +32,12 @@ class IGlossarySettings(Interface):
             vocabulary=u'collective.glossary.PortalTypes'),
     )
 
+    enable_letter_filtering = schema.Bool(
+        title=_(u'Enable filtering by letter?'),
+        description=_(u'Display a list of letters on top of the glossary.'),
+        default=False,
+    )
+
 
 class IGlossary(Interface):
 
